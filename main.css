@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+p{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    line-height: 1.5;
+}
+main{
+    width: 375px;
+    /* border: 1px solid red; */
+    text-align: center;
+
+}
+.bg{
+    position: absolute;
+}
+body{
+    background: url(images/bg-header-mobile.png) no-repeat;
+}
+.logo{
+    margin-top: 120px;
+}
+header h1{
+    margin-top: 3rem ;
+    /* border: 1px solid red; */
+    padding: 0 1.5rem;
+}
+h1{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+header p{
+    text-align: center;
+    padding: 0 .8rem ;
+}
+button{
+    width: 80%;
+    height: 50px;
+    color: white;
+    border: 0;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+#ios{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0 10px 30px -5px var(--Strong-Cyan);
+}
+#mac{
+    background-color: var(--Light-Blue);
+    box-shadow: 0 10px 30px -5px var(--Light-Blue);
+    margin-bottom: 6rem;
+}
+
+.display{
+    width: 325px;
+}
+section .keep-track h1{
+    padding: 0 2.5rem;
+}
+
+section .keep-track p{
+    padding: 1rem;
+     margin-bottom: 4rem;
+}
+section .search h1, section .sync h1, section .history h1{
+    margin-top: 3rem;
+}
+section .sync p{
+    padding: 0 1rem;
+}
+section .history p{
+    padding: 0 1rem;
+}
+section .clipboard-anywhere h1{
+    margin-top: 12rem;
+}
+section .clipboard-anywhere p{
+    padding: 0 .8rem;
+    margin-bottom: 3rem;
+}
+section .workflow h1{
+    margin-top: 6rem;
+}
+section .workflow p{
+    margin-bottom: 3.5rem;
+}
+section .blacklists p{
+    padding: 0 .8rem;
+}
+.mini-logo{
+    margin: 2.5rem 0;
+}
+.img-company{
+    width: 100%;
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-company{
+    margin: 2rem 0;
+}
+.clipboard p{
+    padding: 0 1.5rem;
+}
+footer{
+    background-color: #fdfdfd;
+    width: 375px;
+    text-align: center;
+    border: 1px solid red;
+}
+.footer-part-1 p{
+    margin: 1rem 0;
+    padding: 0 0 .2rem;
+    font-size: 1.2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.logo-2{
+    margin: 2rem 0;
+    width: 60px;
+}
+.footer-part-2{
+    margin: 2rem 0;
+}
+.fb, .tw, .ig{
+    margin: 0 1rem;
+}
+
+@media (min-width: 375px){
+    body{
+        background: url(images/bg-header-desktop.png) no-repeat ;
+        max-width: 1440px;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .logo{
+        width: 75px;
+    }
+    header{
+        padding: 0 15%;
+    }
+    #ios{
+        margin: 0 10px;
+        padding: 0;
+    }
+    #mac{
+        margin: 0 10px;
+        padding: 0;
+    }
+    .btn{
+        margin: 40px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}
